@@ -16,7 +16,7 @@ pipeline {
         stage("Build & Push Image") {
             // Declaramos las variables dinámicas solo para esta etapa
             environment {
-                DOCKER_REPO = 'RoiLF/demo-app'
+                DOCKER_REPO = 'roilf/demo-app'
                 // Combina tu versión base con el número de ejecución de Jenkins
                 IMAGE_TAG = "jma-2.0.${env.BUILD_NUMBER}" 
             }
